@@ -1,2 +1,11 @@
+const { addSyntheticLeadingComment } = require("typescript")
+
 ngFor = we can loop the actual employees which is getting from the backend
-setting it eqaul to   let employee - is a local variable
+setting it eqaul to   let employee - is a local variable 
+    of employees - which is coming from actual component
+    then it is gonna loop for single of each from employees[] 
+    and save each one of them into employee variable 
+
+save navigation operator
+    ?.
+     it is  making sure that employee exits before it tries to access any attributes ont that employee 

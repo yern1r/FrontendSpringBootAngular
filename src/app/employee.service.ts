@@ -31,14 +31,14 @@ export class EmployeeService{
     //and the type of request to make
     //and it is a get request we do not need to pass anything
     public addEmployees(employee : Employee): Observable<Employee>{
-        return this.http.post<Employee>(`${this.apiServerUrl}/employee/all` , employee);
+        return this.http.post<Employee>(`${this.apiServerUrl}/employee/add` , employee);
     }
 
     public updateEmployees(employee : Employee): Observable<Employee>{
         return this.http.put<Employee>(`${this.apiServerUrl}/employee/update` , employee);
     }
 
-    public deleteEmployees(employeeId : number): Observable<void> {
+    public deleteEmployee(employeeId: number): Observable<void> {
         return this.http.delete<void>(`${this.apiServerUrl}/employee/delete/${employeeId}`);
-    }
+      }
 }
